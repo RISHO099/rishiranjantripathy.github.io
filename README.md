@@ -1,2 +1,2 @@
-# rishiranjantripathy.github.io
+#RISHO009.github.io
 Personal Portfolio Website of Rishi Ranjan Tripathy | Electrical Engineer
