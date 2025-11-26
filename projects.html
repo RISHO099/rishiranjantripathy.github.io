@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects | Rishi Ranjan Tripathy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="navbar">
+    <div class="brand">
+      <div class="brand-logo"></div>
+      <div class="brand-text">
+        <h1>Rishi Ranjan Tripathy</h1>
+        <span>Electrical Engineer</span>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrapper">
+  <section>
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">Research-oriented and application-based work in power and control.</p>
+
+    <div class="card">
+      <h3>IoT Based Online Power Monitoring System for Single Phase Systems</h3>
+      <span>Dec 2024</span>
+      <p>
+        Real-time monitoring of electrical parameters in single-phase systems using IoT. The system
+        measures and sends data to an online platform for analysis and remote observation.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>AC-to-AC Triac Based Converter for Shunt Reactive Compensation</h3>
+      <span>Sep 2024 – Mar 2025</span>
+      <p>
+        Designed an AC-to-AC Triac based converter for shunt reactive power compensation suitable for
+        small and medium-scale industries, improving power factor and system efficiency.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Performance Enhancement of Induction Motor Using 7-Level NPC Multilevel Inverter (APOD)</h3>
+      <span>Feb 2025 – Present</span>
+      <p>
+        Simulation and analysis of a 7-level neutral point clamped multilevel inverter using APOD PWM
+        technique for enhanced performance of a three-phase induction motor, including THD reduction
+        and torque characteristics.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>17-Level Switched Capacitor Multilevel Inverter</h3>
+      <span>Feb 2025 – Present</span>
+      <p>
+        Development of a 17-level switched capacitor multilevel inverter topology focusing on voltage
+        boosting, reduced component count and improved output quality.
+      </p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  © <span id="year"></span> Rishi Ranjan Tripathy
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
