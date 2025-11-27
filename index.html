@@ -1,292 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rishi Ranjan Tripathy</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rishi Ranjan Tripathy</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <style>
-    body {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
 
-    /* HEADER */
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 22px;
-      background-color: rgba(0, 0, 0, 0.55);
-      backdrop-filter: blur(10px);
-      position: sticky;
-      top: 0;
-      z-index: 20;
-    }
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 22px;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
 
-    .left-section {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 
-    .menu-icon {
-      font-size: 32px;
-      cursor: pointer;
-      font-weight: 700;
-    }
+.menu-icon {
+  font-size: 34px;
+  cursor: pointer;
+  font-weight: 700;
+}
 
-    .title {
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
-    .search-icon svg {
-      width: 24px;
-      height: 24px;
-      cursor: pointer;
-    }
+.search-icon svg {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: 0.2s;
+}
 
-    /* SIDEBAR */
-    .sidebar {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.4s;
-      padding-top: 60px;
-      z-index: 50;
-    }
+.search-icon svg:hover {
+  scale: 1.15;
+}
 
-    .sidebar a {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      padding: 14px 28px;
-      text-decoration: none;
-      font-size: 20px;
-      color: #f2f2f2;
-      font-weight: 500;
-      transition: 0.25s;
-    }
+/* SIDEBAR */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  z-index: 50;
+}
 
-    .sidebar a:hover {
-      background-color: #0a84ff;
-      color: #fff;
-    }
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f2f2f2;
+  font-weight: 500;
+  transition: 0.25s;
+}
 
-    .closebtn {
-      position: absolute;
-      top: 8px;
-      right: 20px;
-      font-size: 40px;
-      font-weight: 700;
-      cursor: pointer;
-    }
+.sidebar a:hover {
+  background-color: #0a84ff;
+  color: #fff;
+}
 
-    /* SLIDESHOW */
-    .slideshow-container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
+.closebtn {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
 
-    .slide {
-      display: none;
-      position: relative;
-    }
+/* SLIDESHOW */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
-    .slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      background-color: #000;
-    }
+.slide {
+  display: none;
+  position: relative;
+}
 
-    .caption {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0, 0, 0, 0.45);
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-size: 26px;
-      font-weight: 700;
-      text-align: center;
-      color: #fff;
-      backdrop-filter: blur(6px);
-    }
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000;
+}
 
-    /* INTRO SECTION */
-    .intro-section {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 80px 10%;
-      background-color: #000;
-    }
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.45);
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
 
-    .intro-content {
-      width: 50%;
-    }
+/* INTRO SECTION */
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background-color: #000;
+}
 
-    .intro-content h1 {
-      font-size: 38px;
-      font-weight: 700;
-    }
+.intro-content {
+  width: 50%;
+}
 
-    .intro-content p {
-      font-size: 18px;
-      line-height: 1.6;
-      margin-top: 10px;
-      color: #ccc;
-    }
+.intro-content h1 {
+  font-size: 38px;
+  font-weight: 700;
+}
 
-    .intro-content button {
-      margin-top: 18px;
-      padding: 10px 24px;
-      background-color: #0a84ff;
-      border: none;
-      color: #fff;
-      border-radius: 6px;
-      font-size: 18px;
-      cursor: pointer;
-    }
+.intro-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #ccc;
+}
 
-    .intro-content button:hover {
-      background-color: #0064d4;
-    }
+.intro-content button {
+  margin-top: 18px;
+  padding: 10px 24px;
+  background-color: #0a84ff;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+}
 
-    .profile-img {
-      width: 45%;
-      border-radius: 12px;
-      object-fit: cover;
-    }
+.intro-content button:hover {
+  background-color: #0064d4;
+}
 
-    /* MOBILE VIEW */
-    @media (max-width: 600px) {
-      .intro-section {
-        flex-direction: column;
-        text-align: center;
-      }
-      .intro-content, .profile-img {
-        width: 100%;
-      }
-      .slideshow-container {
-        height: 65vh;
-      }
-      .caption {
-        font-size: 18px;
-        padding: 6px 12px;
-      }
-    }
-  </style>
+.profile-img {
+  width: 45%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 600px) {
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro-content, .profile-img {
+    width: 100%;
+  }
+  .slideshow-container {
+    height: 65vh;
+  }
+  .caption {
+    font-size: 18px;
+    padding: 6px 12px;
+  }
+}
+</style>
+
 </head>
-
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="left-section">
-      <div class="menu-icon" onclick="openSidebar()">☰</div>
-      <div class="title">RISHI RANJAN TRIPATHY</div>
-    </div>
-    <div class="search-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-        <path fill="#ffffff" d="M15.5 14h-.79l-.28-.27a6.471 ..."></path>
-      </svg>
-    </div>
-  </header>
 
-  <!-- SIDEBAR -->
-  <div id="sidebar" class="sidebar">
-    <span class="closebtn" onclick="closeSidebar()">&times;</span>
-    <a href="index.html">🏠 Home</a>
-    <a href="about.html">👤 About</a>
-    <a href="#">🎓 Education</a>
-    <a href="#">🛠 Projects</a>
-    <a href="#">🏆 Achievements</a>
-    <a href="#">🖼 Gallery</a>
-    <a href="#">💼 Career</a>
-    <a href="#">📩 Contact</a>
+<!-- HEADER -->
+<header>
+  <div class="left-section">
+    <div class="menu-icon" onclick="openSidebar()">☰</div>
+    <div class="title">RISHI RANJAN TRIPATHY</div>
   </div>
 
-  <!-- SLIDESHOW -->
-  <div class="slideshow-container">
+  <div class="search-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+  </div>
+</header>
 
-    <div class="slide">
-      <a href="https://electrical.kiit.ac.in/rishi-ranjan-tripathy-has-been-selected-as-the-vice-chair-of-ieee-kiit-student-branch/" target="_blank">
-        <img src="ieee.jpg">
-      </a>
-      <div class="caption">IEEE KIIT Student Branch Vice Chair</div>
-    </div>
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+  <span class="closebtn" onclick="closeSidebar()">&times;</span>
+  <a href="index.html">🏠 Home</a>
+  <a href="about.html">👤 About</a>
+  <a href="#">🎓 Education</a>
+  <a href="#">🛠 Projects</a>
+  <a href="#">🏆 Achievements</a>
+  <a href="#">🖼 Gallery</a>
+  <a href="#">💼 Career</a>
+  <a href="#">📩 Contact</a>
+</div>
 
-    <div class="slide">
-      <a href="https://www.linkedin.com/posts/rishiranjan-tripathy-40315a290_lntecc-educationandtraining-activity-7268886771888502784-lIoM" target="_blank">
-        <img src="lt.jpg">
-      </a>
-      <div class="caption">L&T EduTech Excellence Award</div>
-    </div>
+<!-- SLIDESHOW -->
+<div class="slideshow-container">
 
-    <div class="slide">
-      <a href="https://www.facebook.com/share/p/1AKJ2aRGVb/" target="_blank">
-        <img src="nus.jpg">
-      </a>
-      <div class="caption">NUS Singapore Business Analytics Programme</div>
-    </div>
-
-    <div class="slide">
-      <a href="https://www.facebook.com/share/p/1AKJ2aRGVb/" target="_blank">
-        <img src="nus-talk.jpg">
-      </a>
-      <div class="caption">Business Analytics Presentation</div>
-    </div>
-
-    <div class="slide">
-      <a href="https://www.facebook.com/share/p/1BSDLSV3rv/" target="_blank">
-        <img src="iot.jpg">
-      </a>
-      <div class="caption">IoT Based Power Measurement Project</div>
-    </div>
-
+  <div class="slide">
+    <a href="https://electrical.kiit.ac.in/rishi-ranjan-tripathy-has-been-selected-as-the-vice-chair-of-ieee-kiit-student-branch/" target="_blank">
+      <img src="ieee.jpg">
+    </a>
+    <div class="caption">IEEE KIIT Student Branch Vice Chair</div>
   </div>
 
-  <!-- INTRO SECTION -->
-  <section id="intro" class="intro-section">
-    <div class="intro-content">
-      <h1>Hi, I'm <span style="color:#0a84ff">Rishi Ranjan Tripathy</span></h1>
-      <p>Creating my own path with dedication, discipline and dreams.<br>Learning every day, improving every moment, becoming a better version of myself.</p>
-      <button onclick="window.location.href='about.html'">About Me →</button>
-    </div>
-    <img src="rishi-profile.jpg" class="profile-img" alt="profile photo">
-  </section>
+  <div class="slide">
+    <a href="https://www.linkedin.com/posts/rishiranjan-tripathy-40315a290_lntecc-educationandtraining-activity-7268886771888502784-lIoM" target="_blank">
+      <img src="lt.jpg">
+    </a>
+    <div class="caption">L&T EduTech Excellence Award</div>
+  </div>
 
-  <script>
-    let slideIndex = 0;
-    showSlides();
-    function showSlides() {
-      let slides = document.getElementsByClassName("slide");
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 3000);
-    }
+  <div class="slide">
+    <a href="https://www.facebook.com/share/p/1AKJ2aRGVb/" target="_blank">
+      <img src="nus.jpg">
+    </a>
+    <div class="caption">NUS Singapore Business Analytics</div>
+  </div>
 
-    function openSidebar() { document.getElementById("sidebar").style.width = "260px"; }
-    function closeSidebar() { document.getElementById("sidebar").style.width = "0"; }
-  </script>
+  <div class="slide">
+    <a href="https://www.facebook.com/share/p/1AKJ2aRGVb/" target="_blank">
+      <img src="nus-talk.jpg">
+    </a>
+    <div class="caption">Business Analytics Presentation</div>
+  </div>
+
+  <div class="slide">
+    <a href="https://www.facebook.com/share/p/1BSDLSV3rv/" target="_blank">
+      <img src="iot.jpg">
+    </a>
+    <div class="caption">IoT Based Power Measurement Project</div>
+  </div>
+
+</div>
+
+<!-- INTRO SECTION -->
+<section id="intro" class="intro-section">
+  <div class="intro-content">
+    <h1>Hi, I'm <span style="color:#0a84ff;">Rishi Ranjan Tripathy</span></h1>
+    <p>Creating my own path with dedication, discipline and dreams.<br>Learning every day, improving every moment, becoming a better version of myself.</p>
+    <button onclick="window.location.href='about.html'">About Me →</button>
+  </div>
+  <img src="rishi-profile.jpg" class="profile-img">
+</section>
+
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000);
+}
+
+function openSidebar() { document.getElementById("sidebar").style.width = "260px"; }
+function closeSidebar() { document.getElementById("sidebar").style.width = "0"; }
+</script>
 
 </body>
 </html>
