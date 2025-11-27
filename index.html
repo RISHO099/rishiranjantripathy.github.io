@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishi Ranjan Tripathy</title>
+
+<!-- IMPORT PREMIUM FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* PROFESSIONAL HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 22px;
+  background-color: rgba(0,0,0,0.55);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+/* LEFT SIDE HEADER */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* SEARCH ICON */
+.search-icon svg {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  fill: white;
+}
+
+/* SLIDESHOW */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000;
+}
+
+/* SLIDE TEXT */
+.caption {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.subtext {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.slide button {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #0a84ff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.slide button:hover {
+  background-color: #0064d4;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .menu-icon {
+    font-size: 24px;
+  }
+
+  .search-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .slideshow-container {
+    height: 65vh;
+  }
+
+  .slide img {
+    height: 65vh;
+    object-fit: contain;
+  }
+
+  .caption {
+    bottom: 65px;
+    font-size: 18px;
+  }
+
+  .subtext {
+    bottom: 38px;
+    font-size: 14px;
+  }
+
+  .slide button {
+    bottom: 10px;
+    padding: 7px 16px;
+    font-size: 13px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER START -->
+<header>
+  <div class="left-section">
+    <div class="menu-icon">☰</div>
+    <div class="title">RISHI RANJAN TRIPATHY</div>
+  </div>
+
+  <div class="search-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" height="26" width="26" viewBox="0 0 24 24">
+    <path fill="#ffffff" d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 001.48-5.34C15.17 5.59 12.53 3 9.25 3S3.33 5.59 3.08 8.39C2.73 12.15 5.54 15.25 9 15.25c1.61 0 3.09-.59 4.22-1.57l.27.28v.79l5 5 1.49-1.49-5-5zm-6.5 0C6.46 14 4 11.54 4 8.5S6.46 3 9.5 3 15 5.46 15 8.5 12.54 14 9.5 14z"/>
+  </svg>
+</div>
+</header>
+<!-- HEADER END -->
+
+<!-- SLIDESHOW START -->
+<div class="slideshow-container">
+
+  <!-- SLIDE 1: IEEE -->
+  <div class="slide">
+    <img src="ieee.jpg" alt="IEEE Vice Chair">
+    <div class="caption">IEEE Vice Chair | School of Electrical Engineering</div>
+    <div class="subtext">Elected as Vice Chair IEEE Student Branch KIIT University</div>
+    <button onclick="window.open('https://kiit.ac.in','_blank')">View Official Post →</button>
+  </div>
+
+  <!-- SLIDE 2 -->
+  <div class="slide">
+    <img src="lt.jpg" alt="L&T Award">
+    <div class="caption">Excellence Award | L&T EduTech</div>
+    <div class="subtext">Recognized by Larsen & Toubro EduTech for Excellence</div>
+    <button onclick="window.open('https://www.facebook.com/share/p/1AKJ2aRGVb/?mibextid=qi2Omg','_blank')">View Achievement →</button>
+  </div>
+
+  <!-- SLIDE 3 -->
+  <div class="slide">
+    <img src="nus.jpg" alt="NUS Certificate">
+    <div class="caption">National University of Singapore</div>
+    <div class="subtext">Completed AI-Powered Business Analytics (Intermediate)</div>
+    <button onclick="window.open('https://www.facebook.com/share/p/1AKJ2aRGVb/?mibextid=qi2Omg','_blank')">View Certificate →</button>
+  </div>
+
+  <!-- SLIDE 4 -->
+  <div class="slide">
+    <img src="nus-talk.jpg" alt="Singapore Talk">
+    <div class="caption">Business Analytics Presentation | Singapore</div>
+    <div class="subtext">Presented Real-Time Analytics project with global audience</div>
+    <button onclick="window.open('https://www.facebook.com/share/p/1AKJ2aRGVb/?mibextid=qi2Omg','_blank')">View Presentation →</button>
+  </div>
+
+  <!-- SLIDE 5 -->
+  <div class="slide">
+    <img src="iot.jpg" alt="IoT Project">
+    <div class="caption">IoT-Based Power Monitoring System</div>
+    <div class="subtext">Presented in School of Electrical Engineering Expo</div>
+    <button onclick="window.open('https://www.facebook.com/share/p/1BSDLSV3rv/?mibextid=qi2Omg','_blank')">View Project →</button>
+  </div>
+
+</div>
+<!-- SLIDESHOW END -->
+
+<!-- SCRIPT -->
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000);
+}
+</script>
+
+</body>
+</html>
