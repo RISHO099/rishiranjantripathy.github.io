@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rishi Ranjan Tripathy</title>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <style>
     body {
@@ -117,15 +114,20 @@
 
     .caption {
       position: absolute;
-      bottom: 40px;
-      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.45);
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 26px;
+      font-weight: 700;
       text-align: center;
-      font-size: 22px;
-      font-weight: 600;
-      text-shadow: 0 0 8px #000;
+      color: #fff;
+      backdrop-filter: blur(6px);
     }
 
-    /* INTRO SECTION HALF SPLIT */
+    /* INTRO SECTION */
     .intro-section {
       display: flex;
       align-items: center;
@@ -171,25 +173,21 @@
       object-fit: cover;
     }
 
-    /* MOBILE */
+    /* MOBILE VIEW */
     @media (max-width: 600px) {
       .intro-section {
         flex-direction: column;
         text-align: center;
       }
-      .intro-content,
-      .profile-img {
+      .intro-content, .profile-img {
         width: 100%;
       }
       .slideshow-container {
         height: 65vh;
       }
-      .slide img {
-        height: 65vh;
-      }
       .caption {
-        font-size: 16px;
-        bottom: 20px;
+        font-size: 18px;
+        padding: 6px 12px;
       }
     }
   </style>
@@ -202,18 +200,9 @@
       <div class="menu-icon" onclick="openSidebar()">☰</div>
       <div class="title">RISHI RANJAN TRIPATHY</div>
     </div>
-
     <div class="search-icon">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="#ffffff"
-          d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 001.48-5.34C15.17 5.59 12.53 3 9.25 3S3.33 5.59 3.08 8.39C2.73 12.15 5.54 15.25 9 15.25c1.61 0 3.09-.59 4.22-1.57l.27.28v.79l5 5 1.49-1.49-5-5zm-6.5 0C6.46 14 4 11.54 4 8.5S6.46 3 9.5 3 15 5.46 15 8.5 12.54 14 9.5 14z"
-        />
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path fill="#ffffff" d="M15.5 14h-.79l-.28-.27a6.471 ..."></path>
       </svg>
     </div>
   </header>
@@ -233,66 +222,52 @@
 
   <!-- SLIDESHOW -->
   <div class="slideshow-container">
+
     <div class="slide">
-      <a
-        href="https://electrical.kiit.ac.in/rishi-ranjan-tripathy-has-been-selected-as-the-vice-chair-of-ieee-kiit-student-branch/"
-        target="_blank"
-      >
-        <img src="ieee.jpg" alt="IEEE Vice Chair" />
+      <a href="https://electrical.kiit.ac.in/rishi-ranjan-tripathy-has-been-selected-as-the-vice-chair-of-ieee-kiit-student-branch/" target="_blank">
+        <img src="ieee.jpg">
       </a>
       <div class="caption">IEEE KIIT Student Branch Vice Chair</div>
     </div>
 
     <div class="slide">
-      <a
-        href="https://www.linkedin.com/posts/rishiranjan-tripathy-40315a290_lntecc-educationandtraining-activity-7268886771888502784-lIoM"
-        target="_blank"
-      >
-        <img src="lt.jpg" alt="L&T Excellence Award" />
+      <a href="https://www.linkedin.com/posts/rishiranjan-tripathy-40315a290_lntecc-educationandtraining-activity-7268886771888502784-lIoM" target="_blank">
+        <img src="lt.jpg">
       </a>
-      <div class="caption">L&amp;T EduTech Excellence Award</div>
+      <div class="caption">L&T EduTech Excellence Award</div>
     </div>
 
     <div class="slide">
       <a href="https://www.facebook.com/share/p/1AKJ2aRGVb/" target="_blank">
-        <img src="nus.jpg" alt="NUS Certificate" />
+        <img src="nus.jpg">
       </a>
-      <div class="caption">Singapore NUS Business Analytics Programme</div>
+      <div class="caption">NUS Singapore Business Analytics Programme</div>
     </div>
 
     <div class="slide">
       <a href="https://www.facebook.com/share/p/1AKJ2aRGVb/" target="_blank">
-        <img src="nus-talk.jpg" alt="NUS Presentation" />
+        <img src="nus-talk.jpg">
       </a>
-      <div class="caption">Business Analytics Presentation | Singapore</div>
+      <div class="caption">Business Analytics Presentation</div>
     </div>
 
     <div class="slide">
       <a href="https://www.facebook.com/share/p/1BSDLSV3rv/" target="_blank">
-        <img src="iot.jpg" alt="IoT Project" />
+        <img src="iot.jpg">
       </a>
       <div class="caption">IoT Based Power Measurement Project</div>
     </div>
+
   </div>
 
   <!-- INTRO SECTION -->
   <section id="intro" class="intro-section">
     <div class="intro-content">
-      <h1>Hi, I'm <span style="color: #0a84ff">Rishi Ranjan Tripathy</span></h1>
-      <p>
-        Creating my own path with dedication, discipline and dreams.<br />
-        Learning every day, improving every moment, becoming a better
-        version of myself.
-      </p>
-      <button onclick="window.location.href='about.html'">
-        About Me →
-      </button>
+      <h1>Hi, I'm <span style="color:#0a84ff">Rishi Ranjan Tripathy</span></h1>
+      <p>Creating my own path with dedication, discipline and dreams.<br>Learning every day, improving every moment, becoming a better version of myself.</p>
+      <button onclick="window.location.href='about.html'">About Me →</button>
     </div>
-    <img
-      src="rishi-profile.jpg"
-      class="profile-img"
-      alt="Profile"
-    />
+    <img src="rishi-profile.jpg" class="profile-img" alt="profile photo">
   </section>
 
   <script>
@@ -304,19 +279,14 @@
         slides[i].style.display = "none";
       }
       slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
+      if (slideIndex > slides.length) { slideIndex = 1 }
       slides[slideIndex - 1].style.display = "block";
       setTimeout(showSlides, 3000);
     }
 
-    function openSidebar() {
-      document.getElementById("sidebar").style.width = "260px";
-    }
-    function closeSidebar() {
-      document.getElementById("sidebar").style.width = "0";
-    }
+    function openSidebar() { document.getElementById("sidebar").style.width = "260px"; }
+    function closeSidebar() { document.getElementById("sidebar").style.width = "0"; }
   </script>
+
 </body>
 </html>
