@@ -215,7 +215,7 @@ header {
 <div id="sidebar" class="sidebar">
   <span class="closebtn" onclick="closeSidebar()">&times;</span>
   <a href="#">🏠 Home</a>
-  <a href="#about">👤 About</a>
+  <a href="about.html">👤 About</a>
   <a href="#">🎓 Education</a>
   <a href="#">🛠 Projects</a>
   <a href="#">🏆 Achievements</a>
@@ -226,31 +226,47 @@ header {
 
 <!-- SLIDESHOW -->
 <div class="slideshow-container">
-  <div class="slide"><img src="ieee.jpg"></div>
-  <div class="slide"><img src="lt.jpg"></div>
-  <div class="slide"><img src="nus.jpg"></div>
-  <div class="slide"><img src="nus-talk.jpg"></div>
-  <div class="slide"><img src="iot.jpg"></div>
+
+  <div class="slide">
+    <a href="https://electrical.kiit.ac.in/rishi-ranjan-tripathy-has-been-selected-as-the-vice-chair-of-ieee-kiit-student-branch/" target="_blank">
+      <img src="ieee.jpg">
+    </a>
+    <div class="caption"> IEEE KIIT Student Branch Vice Chair</div>
+  </div>
+
+  <div class="slide">
+      <img src="lt.jpg">
+    </a>
+    <div class="caption">L&T Excellence Award</div>
+  </div>
+
+  <div class="slide">
+  
+      <img src="nus.jpg">
+    </a>
+    <div class="caption">Singapore NUS Business Analytics</div>
+  </div>
+
+  <div class="slide">
+    
+      <img src="iot.jpg">
+    </a>
+    <div class="caption">IOT Based Power Management Project</div>
+  </div>
+
 </div>
 
 <!-- INTRO SECTION -->
 <section id="intro" class="intro-section">
   <div class="intro-content">
     <h1>Hi, I'm <span style="color:#0a84ff;">Rishi Ranjan Tripathy</span></h1>
-    <p>This is my official personal website.<br>Explore my journey, achievements, projects and future vision.</p>
+    <p>Creating my own path with dedication, discipline and dreams.<br>
+Learning every day, improving every moment, becoming a better version of myself.</p>
     <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About Me →</button>
   </div>
   <img src="rishi-profile.jpg" class="profile-img" alt="Profile">
 </section>
 
-<!-- ABOUT SECTION -->
-<section id="about" class="about-section">
-  <h2>About Me</h2>
-  <p class="about-text">
-    Electrical Engineering student at KIIT University, IEEE Vice Chair, Awardee of L&T EduTech Excellence,
-    participant in NUS Singapore Business Analytics programme and aspiring leader in the power industry.
-  </p>
-</section>
 
 <script>
 let slideIndex = 0;
@@ -269,4 +285,5 @@ function closeSidebar() { document.getElementById("sidebar").style.width = "0"; 
 </script>
 
 </body>
+
 </html>
